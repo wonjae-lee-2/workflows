@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "workflows"
+version = "0.0.1"
+authors = [
+  { name="Wonjae Lee", email="leew@unhcr.org" },
+]
+description = "A small package for managing workflows"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "polars==0.16.7",
+    "prefect==2.8.2",
+    "pyodbc==4.0.35",
+    "pytest==7.2.1",
+    "requests==2.28.2",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/wonjae-lee-2/workflows"
+"Bug Tracker" = "https://github.com/wonjae-lee-2/workflows/issues"
+
+[tool.hatch.build]
+exclude = [
+  "compose.yaml",
+  "/Dockerfile",
+]

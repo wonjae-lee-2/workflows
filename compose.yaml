@@ -1,0 +1,12 @@
+name: workflows
+services:
+  dev:
+    image: workflows-dev:latest
+    build:
+      context: .
+      dockerfile: Dockerfile/dev.Dockerfile
+    volumes:
+      - type: bind
+        source: /home/ubuntu/workspaces/workflows
+        target: /home/ubuntu/workflows
+    tty: true
