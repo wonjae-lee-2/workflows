@@ -1,3 +1,4 @@
+boto3==1.26.75
 build==0.10.0
 polars==0.16.7
 prefect==2.8.2
