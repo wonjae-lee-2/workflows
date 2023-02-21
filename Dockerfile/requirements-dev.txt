@@ -4,3 +4,4 @@ prefect==2.8.2
 pyodbc==4.0.35
 pytest==7.2.1
 requests==2.28.2
+twine==4.0.2
