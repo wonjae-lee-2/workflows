@@ -1,5 +1,5 @@
 build==0.10.0
-jupyterlab==3.6.1
+ipython==8.10.0
 polars==0.16.7
 prefect==2.8.2
 pyodbc==4.0.35

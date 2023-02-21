@@ -7,10 +7,10 @@ RUN apt update && \
 WORKDIR /home/ubuntu
 USER ubuntu
 
-COPY Dockerfile/requirements-dev.txt requirements.txt
+COPY Dockerfile/dev-requirements.txt dev-requirements.txt
 RUN python -m pip install --no-cache-dir pip==23.0.1 && \
     python -m pip install --no-cache-dir setuptools==67.3.2 && \
     python -m pip install --no-cache-dir wheel==0.38.4 && \
-    python -m pip install --no-cache-dir -r requirements.txt
+    python -m pip install --no-cache-dir -r dev-requirements.txt
 
 CMD [ "/bin/bash" ]
