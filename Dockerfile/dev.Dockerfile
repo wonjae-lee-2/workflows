@@ -7,7 +7,7 @@ RUN apt update && \
 WORKDIR /home/ubuntu
 USER ubuntu
 
-COPY Dockerfile/requirements.txt requirements.txt
+COPY Dockerfile/requirements-dev.txt requirements.txt
 RUN python -m pip install pip==23.0.1 && \
     python -m pip install setuptools==67.3.2 && \
     python -m pip install wheel==0.38.4 && \
