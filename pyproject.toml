@@ -34,3 +34,6 @@ exclude = [
   "/Dockerfile",
   "/tmp",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = "src"
